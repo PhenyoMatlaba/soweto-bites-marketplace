@@ -1,1 +1,51 @@
+create table stores (
+    id bigint generated always as identity primary key,
+    store_name text not null,
+    owner_name text,
+    phone_number text,
+    email text,
+    description text,
+    logo_url text,
+    verified boolean default true,
+    created_at timestamp default now()
+);
 
+create table employees (
+    id bigint generated always as identity primary key,
+    store_id bigint references stores(id),
+    employee_name text,
+    employee_phone text,
+    role text,
+    created_at timestamp default now()
+);
+
+create table products (
+    id bigint generated always as identity primary key,
+    store_id bigint references stores(id),
+    product_name text,
+    description text,
+    price numeric(10,2),
+    image_url text,
+    active boolean default true,
+    created_at timestamp default now()
+);
+
+create table orders (
+    id bigint generated always as identity primary key,
+    store_id bigint references stores(id),
+    customer_name text,
+    customer_phone text,
+    customer_email text,
+    total_amount numeric(10,2),
+    status text default 'pending',
+    payment_status text default 'pending',
+    created_at timestamp default now()
+);
+
+create table order_items (
+    id bigint generated always as identity primary key,
+    order_id bigint references orders(id),
+    product_id bigint references products(id),
+    quantity integer,
+    price numeric(10,2)
+);
