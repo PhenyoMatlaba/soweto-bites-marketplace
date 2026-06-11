@@ -1,59 +1,142 @@
+# 🍽️ Soweto Bites Marketplace
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soweto Bites Marketplace</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+## South Africa's Marketplace for Local Businesses
 
-<header>
-  <h1>Soweto Bites</h1>
+Soweto Bites Marketplace connects customers with verified local stores, restaurants, bakeries, grocery shops, and service providers across South Africa.
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Restaurants</a>
-    <a href="#">Drivers</a>
-    <a href="#">Vendors</a>
-  </nav>
-</header>
+---
 
-<section class="hero">
-  <h2>The Township Marketplace Revolution</h2>
+## 🚀 Features
 
-  <p>
-    Connecting restaurants, logistics,
-    vendors and customers into one digital ecosystem.
-  </p>
+### Customer Features
 
-  <button>Join Marketplace</button>
-</section>
+* Browse verified stores
+* Search products
+* Add products to cart
+* Secure online payments
+* Digital receipts
+* Order tracking
+* Mobile-friendly experience
 
-<section class="features">
+### Vendor Features
 
-  <div class="card">
-    <h3>Restaurant Dashboard</h3>
-    <p>Manage orders and menus.</p>
-  </div>
+* Store management dashboard
+* Product catalog management
+* Order notifications
+* Employee assignment system
+* Sales reporting
+* Customer management
 
-  <div class="card">
-    <h3>Delivery Tracking</h3>
-    <p>Real-time logistics system.</p>
-  </div>
+### Marketplace Features
 
-  <div class="card">
-    <h3>AI Analytics</h3>
-    <p>Business intelligence tools.</p>
-  </div>
+* Vendor verification
+* Payment processing
+* Order monitoring
+* Marketplace commissions
+* Customer support
+* Business onboarding
 
-</section>
+---
 
-<footer>
-  <p>© 2026 Soweto Bites Marketplace</p>
-</footer>
+## 🏪 Verified Stores
 
-</body>
-</html># soweto-bites-marketplace
+### Dairy Village
 
+Status: Verified
+
+Products:
+
+* Full Cream Milk 2L
+* Brown Bread
+* Cheddar Cheese
+* Yoghurt 1kg
+
+---
+
+## 🛠 Technology Stack
+
+Frontend
+
+* HTML5
+* CSS3
+* JavaScript
+
+Backend
+
+* Supabase
+
+Database
+
+* PostgreSQL
+
+Payments
+
+* Flutterwave
+
+Hosting
+
+* GitHub Pages
+* Vercel
+
+Authentication
+
+* Supabase Auth
+
+---
+
+## 📦 Marketplace Structure
+
+```text
+soweto-bites-marketplace
+
+index.html
+stores.html
+store.html
+cart.html
+checkout.html
+
+css/
+js/
+assets/
+database/
+```
+
+---
+
+## 🔗 Project Links
+
+GitHub Repository
+
+https://github.com/MMTCODE56/soweto-bites-marketplace
+
+Marketplace Brand
+
+Soweto Bites Marketplace
+
+---
+
+## 🎯 Mission
+
+Empowering local businesses through technology while providing customers with a simple and secure shopping experience.
+
+---
+
+## 📞 Contact
+
+WhatsApp:
+063 594 6585
+
+Facebook:
+Soweto Bites Marketplace
+
+Instagram:
+@SowetoBitesMarketplace
+
+Telegram:
+Soweto Bites Official
+
+---
+
+## © 2026 Soweto Bites Marketplace
+
+All Rights Reserved.
