@@ -1,1 +1,220 @@
-Initial Soweto Bites marketplace launch
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soweto Bites Marketplace</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#131921;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.search-box{
+    width:50%;
+}
+
+.search-box input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+}
+
+.cart{
+    background:#ff9900;
+    padding:10px 15px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.hero{
+    background:#232f3e;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.section{
+    padding:40px;
+}
+
+.section h2{
+    margin-bottom:20px;
+}
+
+.store-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.store-card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.verified{
+    color:green;
+    font-weight:bold;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff9900;
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:5px;
+    margin-top:10px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.product-card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.product-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.price{
+    color:#ff6b00;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+footer{
+    background:#131921;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="logo">Soweto Bites</div>
+
+<div class="search-box">
+<input type="text" placeholder="Search products, stores and deals...">
+</div>
+
+<div class="cart">
+Cart (0)
+</div>
+</header>
+
+<section class="hero">
+<h1>Order • Deliver • Grow</h1>
+<p>South Africa's Marketplace For Local Businesses</p>
+</section>
+
+<section class="section">
+
+<h2>✓ Verified Stores</h2>
+
+<div class="store-grid">
+
+<div class="store-card">
+<div class="verified">✓ VERIFIED STORE</div>
+<h3>Dairy Village</h3>
+<p>Groceries • Dairy • Bakery</p>
+<a href="#" class="btn">Visit Store</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Featured Products</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<h3>Full Cream Milk 2L</h3>
+<div class="price">R39.99</div>
+<button class="btn">Add To Cart</button>
+</div>
+
+<div class="product-card">
+<h3>Brown Bread</h3>
+<div class="price">R17.99</div>
+<button class="btn">Add To Cart</button>
+</div>
+
+<div class="product-card">
+<h3>Cheddar Cheese 500g</h3>
+<div class="price">R89.99</div>
+<button class="btn">Add To Cart</button>
+</div>
+
+<div class="product-card">
+<h3>Yoghurt 1kg</h3>
+<div class="price">R44.99</div>
+<button class="btn">Add To Cart</button>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>Soweto Bites Marketplace © 2026</p>
+<p>Facebook | Instagram | Telegram</p>
+</footer>
+
+</body>
+</html>
