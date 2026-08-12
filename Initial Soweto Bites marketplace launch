@@ -1,1 +1,560 @@
-Initial Soweto Bites marketplace launch
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Soweto Bites Marketplace - discover verified local stores, browse products and shop local."
+    >
+
+    <meta name="theme-color" content="#131921">
+
+    <title>Soweto Bites Marketplace</title>
+
+    <link rel="stylesheet" href="css/marketplace.css">
+</head>
+
+<body>
+
+<!-- =========================
+     TOP HEADER
+========================= -->
+
+<header class="sb-topbar">
+
+    <a href="index.html" class="sb-brand">
+        <span class="sb-brand-mark">SB</span>
+        <span>Soweto Bites</span>
+    </a>
+
+    <form class="sb-search" id="searchForm">
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Search stores, products and categories..."
+            autocomplete="off"
+        >
+
+        <button type="submit" aria-label="Search">
+            🔍
+        </button>
+    </form>
+
+    <button
+        type="button"
+        class="sb-cart-button"
+        id="cartButton"
+    >
+        🛒 Cart
+        <span class="sb-cart-count" id="cartCount">0</span>
+    </button>
+
+</header>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav class="sb-nav">
+
+    <a href="#stores">Verified Stores</a>
+    <a href="#categories">Categories</a>
+    <a href="#products">Products</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#contact">Contact</a>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="sb-hero">
+
+    <div class="sb-hero-inner">
+
+        <div class="sb-eyebrow">
+            Soweto's Local Marketplace
+        </div>
+
+        <h1>
+            Discover local businesses.
+            Shop with confidence.
+        </h1>
+
+        <p>
+            Find verified local stores and discover products available
+            through the Soweto Bites Marketplace.
+        </p>
+
+        <div class="sb-hero-actions">
+
+            <a
+                href="#stores"
+                class="sb-button"
+            >
+                🛍 Browse Stores
+            </a>
+
+            <a
+                href="#products"
+                class="sb-button secondary"
+            >
+                Explore Products
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TRUST FEATURES
+========================= -->
+
+<main>
+
+<section class="sb-container">
+
+    <div class="sb-trust">
+
+        <div class="sb-trust-card">
+            <strong>✓ Verified Businesses</strong>
+            <span class="sb-muted">
+                Discover businesses listed through Soweto Bites.
+            </span>
+        </div>
+
+        <div class="sb-trust-card">
+            <strong>🛒 One Marketplace</strong>
+            <span class="sb-muted">
+                Browse products from participating local stores.
+            </span>
+        </div>
+
+        <div class="sb-trust-card">
+            <strong>📱 Mobile Friendly</strong>
+            <span class="sb-muted">
+                Designed for customers using Android, iPhone and desktop.
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CATEGORIES
+========================= -->
+
+<section
+    class="sb-container"
+    id="categories"
+>
+
+    <div class="sb-section-head">
+
+        <div>
+            <h2>Shop by Category</h2>
+            <p class="sb-muted">
+                Explore products from local businesses.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="sb-category-row">
+
+        <button class="sb-category" data-category="Groceries">
+            <span>🛒</span>
+            Groceries
+        </button>
+
+        <button class="sb-category" data-category="Dairy">
+            <span>🥛</span>
+            Dairy
+        </button>
+
+        <button class="sb-category" data-category="Bakery">
+            <span>🍞</span>
+            Bakery
+        </button>
+
+        <button class="sb-category" data-category="Drinks">
+            <span>🥤</span>
+            Drinks
+        </button>
+
+        <button class="sb-category" data-category="Household">
+            <span>🧼</span>
+            Household
+        </button>
+
+        <button class="sb-category" data-category="All">
+            <span>•••</span>
+            All Products
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     VERIFIED STORES
+========================= -->
+
+<section
+    class="sb-container"
+    id="stores"
+>
+
+    <div class="sb-section-head">
+
+        <div>
+            <h2>Verified Stores</h2>
+
+            <p class="sb-muted">
+                Shop from businesses listed on Soweto Bites.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="sb-store-grid">
+
+        <!-- DAIRY VILLAGE -->
+
+        <article
+            class="sb-store-card"
+            data-store="Dairy Village"
+        >
+
+            <div class="sb-store-cover">
+                DAIRY VILLAGE
+            </div>
+
+            <div class="sb-store-card-body">
+
+                <div class="sb-store-title">
+
+                    <h3>Dairy Village</h3>
+
+                    <span class="sb-verified">
+                        ✓ VERIFIED
+                    </span>
+
+                </div>
+
+                <p class="sb-store-meta">
+                    Groceries • Dairy • Bakery
+                </p>
+
+                <button
+                    class="sb-button dark"
+                    type="button"
+                    data-store-filter="Dairy Village"
+                >
+                    Visit Store
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- FUTURE STORE SLOT -->
+
+        <article class="sb-store-card">
+
+            <div class="sb-store-cover">
+                SOON
+            </div>
+
+            <div class="sb-store-card-body">
+
+                <div class="sb-store-title">
+                    <h3>More Local Stores</h3>
+                </div>
+
+                <p class="sb-store-meta">
+                    More verified businesses will appear here.
+                </p>
+
+                <button
+                    class="sb-button secondary"
+                    type="button"
+                    disabled
+                >
+                    Coming Soon
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<section
+    class="sb-container"
+    id="products"
+>
+
+    <div class="sb-section-head">
+
+        <div>
+            <h2>Dairy Village Products</h2>
+
+            <p class="sb-muted">
+                Products currently listed for Dairy Village.
+            </p>
+
+        </div>
+
+    </div>
+
+    <p
+        id="resultsMessage"
+        class="sb-results-message"
+    >
+        Showing available products
+    </p>
+
+
+    <div
+        class="sb-product-grid"
+        id="productGrid"
+    >
+
+        <!-- PRODUCTS ARE GENERATED BY JAVASCRIPT -->
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     HOW IT WORKS
+========================= -->
+
+<section
+    class="sb-container"
+    id="how-it-works"
+>
+
+    <div class="sb-section-head">
+        <div>
+            <h2>How Soweto Bites Works</h2>
+
+            <p class="sb-muted">
+                Simple marketplace shopping.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="sb-trust">
+
+        <div class="sb-trust-card">
+            <strong>1. Browse</strong>
+            <span class="sb-muted">
+                Find a participating local business.
+            </span>
+        </div>
+
+        <div class="sb-trust-card">
+            <strong>2. Choose Products</strong>
+            <span class="sb-muted">
+                Select products and add them to your cart.
+            </span>
+        </div>
+
+        <div class="sb-trust-card">
+            <strong>3. Checkout</strong>
+            <span class="sb-muted">
+                The production checkout and payment layer will be
+                connected in the next phase.
+            </span>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     CART MODAL
+========================= -->
+
+<div
+    class="sb-modal"
+    id="cartModal"
+    aria-hidden="true"
+>
+
+    <div class="sb-modal-panel">
+
+        <div class="sb-modal-head">
+
+            <h2>Your Cart</h2>
+
+            <button
+                type="button"
+                class="sb-close"
+                id="closeCart"
+                aria-label="Close cart"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            id="cartItems"
+        ></div>
+
+
+        <div
+            id="emptyCart"
+            class="sb-empty"
+        >
+            Your cart is empty.
+        </div>
+
+
+        <div
+            id="cartSummary"
+            hidden
+        >
+
+            <div class="sb-total">
+
+                <span>Subtotal</span>
+
+                <span id="cartTotal">
+                    R0.00
+                </span>
+
+            </div>
+
+            <div class="sb-notice">
+
+                Checkout and real payment processing will be
+                connected after the production backend is installed.
+
+            </div>
+
+            <button
+                type="button"
+                class="sb-button"
+                id="checkoutButton"
+                style="width:100%;"
+            >
+                Continue to Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer id="contact">
+
+    <div class="sb-footer">
+
+        <div>
+
+            <h3>Soweto Bites Marketplace</h3>
+
+            <p>
+                Connecting customers with local businesses
+                through a modern digital marketplace.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Marketplace</h3>
+
+            <a href="#stores">
+                Verified Stores
+            </a>
+
+            <a href="#products">
+                Products
+            </a>
+
+            <a href="#categories">
+                Categories
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Connect</h3>
+
+            <a href="#">
+                Facebook
+            </a>
+
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                WhatsApp
+            </a>
+
+            <a href="#">
+                Telegram
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="sb-footer-bottom">
+
+        © 2026 Soweto Bites Marketplace.
+        All rights reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
+```
